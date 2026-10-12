@@ -1,0 +1,17 @@
+{
+  "name": "mr-pryer-maths-v74-cosmos-server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Render-ready multiplayer alpha server and hosted V7.4 Cosmos Edition game",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "ws": "^8.18.0"
+  }
+}
