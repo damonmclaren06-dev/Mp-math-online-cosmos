@@ -1,0 +1,31 @@
+directories:
+  output: dist
+  buildResources: build
+appId: au.mrpryermaths.v8deepsea
+productName: Mr Pryer Math Version 8 Deep Sea
+files:
+  - filter:
+      - index.html
+      - main.js
+      - anchor.ico
+      - package.json
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+  icon: anchor.ico
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: Mr Pryer Math Version 8 Deep Sea
+  artifactName: V_8-Deepseaplat.exe
+publish:
+  - provider: github
+    owner: damonmclaren06-dev
+    repo: Mp-math-online-cosmos
+    releaseType: release
+electronVersion: 37.10.3
